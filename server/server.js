@@ -30,10 +30,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 app.use(cors({
-  origin: [
-            // ✅ frontend dev
-  "https://one-stop-flax-tau.vercel.app"     // ✅ frontend deployed
-],
+  origin:"https://one-stop-flax-tau.vercel.app",  // ✅ frontend deployed,
   methods: ["GET", "POST", "DELETE", "PUT"],
   allowedHeaders: [
     "Content-Type",
@@ -44,7 +41,10 @@ app.use(cors({
   ],
   credentials: true,
 }));
-app.options('*', cors()); 
+app.options('*', cors({
+  origin: ['https://one-stop-flax-tau.vercel.app', 'http://localhost:5173'],
+  credentials: true
+}));
 
 app.use(cookieParser());
 app.use(express.json());
