@@ -6,8 +6,8 @@ import axios from "axios";
 import { addProductFormElements } from "@/config"; // Import the config file
 import { categoryBrandMapping, getBrandsByCategory, categories } from "@/config/category-brand-config"; // Import from config
 
-//const backendUrl = "https://lookgood.onrender.com"
-const backendUrl = "";
+const backendUrl = "https://onestop-wiil.onrender.com"
+//const backendUrl = "";
 
 function AdvertisementUpload() {
   const [videoFile, setVideoFile] = useState(null);

@@ -4,8 +4,8 @@ import axios from "axios";
 import { categoryBrandMapping } from "@/config/category-brand-config";
 
 import { VolumeX, Volume2 } from "lucide-react";
-//const backendUrl = "https://lookgood.onrender.com"
-const backendUrl = ""
+const backendUrl = "https://onestop-wiil.onrender.com"
+//const backendUrl = ""
 
 
 function VideoSection({ uniqueKey, numAds, filterByCategory = [] }) {

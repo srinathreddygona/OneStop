@@ -12,7 +12,7 @@ export const registerUser = createAsyncThunk(
 
   async (formData) => {
     const response = await axios.post(
-      `/api/auth/register`,
+      `https://onestop-wiil.onrender.com/api/auth/register`,
       formData,
       {
         withCredentials: true,
@@ -28,7 +28,7 @@ export const loginUser = createAsyncThunk(
 
   async (formData) => {
     const response = await axios.post(
-      `/api/auth/login`,
+      `https://onestop-wiil.onrender.com/api/auth/login`,
       formData,
       {
         withCredentials: true,
@@ -44,7 +44,7 @@ export const logoutUser = createAsyncThunk(
 
   async () => {
     const response = await axios.post(
-      `/api/auth/logout`,
+      `https://onestop-wiil.onrender.com/api/auth/logout`,
       {},
       {
         withCredentials: true,
@@ -60,7 +60,7 @@ export const checkAuth = createAsyncThunk(
 
   async () => {
     const response = await axios.get(
-      `/api/auth/check-auth`,
+      `https://onestop-wiil.onrender.com/api/auth/check-auth`,
       {
         withCredentials: true,
         headers: {

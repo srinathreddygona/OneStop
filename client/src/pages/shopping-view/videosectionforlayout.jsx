@@ -4,7 +4,7 @@ import axios from "axios";
 import { categoryBrandMapping } from "@/config/category-brand-config";
 
 // const backendUrl = "https://lookgood.onrender.com";
-const backendUrl = ""; // Set this to your actual API endpoint
+const backendUrl = "https://onestop-wiil.onrender.com"; // Set this to your actual API endpoint
 
 function VideoSectionForLayout({ uniqueKey, numAds, filterByCategory = [], onShopNow }) {
   const navigate = useNavigate();
