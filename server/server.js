@@ -32,7 +32,7 @@ const PORT = process.env.PORT || 5000;
 app.use(cors({
   origin: [
             // ✅ frontend dev
-  "https://look-good.vercel.app"     // ✅ frontend deployed
+  "https://one-stop-flax-tau.vercel.app/"     // ✅ frontend deployed
 ],
   methods: ["GET", "POST", "DELETE", "PUT"],
   allowedHeaders: [
